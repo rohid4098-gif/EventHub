@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Approve / Reject Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>EventHub</h2>
+  <a href="index.html">Dashboard</a>
+  <a href="users.html">Manage Users</a>
+  <a href="events.html">Approve Events</a>
+  <a href="categories.html">Categories</a>
+</div>
+
+<div class="main">
+    <h1>Approve / Reject Events</h1>
+    
+<table>
+    <tr><th>Event Name</th><th>Organizer</th>
+        <th>Date</th><th>Status</th>
+        <th>Action</th></tr>
+
+    <tbody id="eventTable">
+        <tr><td>Wedding Program</td>
+            <td>Rohid</td>
+            <td>25 Nov 2026</td>
+            <td>Pending</td>
+
+        <td><button onclick="approveEvent(this)">Approve</button> 
+            <button onclick="rejectEvent(this)">Reject</button></td></tr>
+        
+        <tr><td>Tech Seminar</td>
+            <td>Takey</td>
+            <td>28 Nov 2026</td>
+            <td>Pending</td>
+
+        <td><button onclick="approveEvent(this)">Approve</button> 
+            <button onclick="rejectEvent(this)">Reject</button></td></tr>
+        
+        <tr><td>Cultural Program</td>
+            <td>Maheen</td><td>16 Dec 2026</td>
+            <td>Approved</td>
+            <td>-</td></tr>
+    </tbody>
+</table>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

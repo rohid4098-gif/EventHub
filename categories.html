@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Categories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>EventHub</h2>
+  <a href="index.html">Dashboard</a>
+  <a href="users.html">Manage Users</a>
+  <a href="events.html">Approve Events</a>
+  <a href="categories.html">Categories</a>
+</div>
+
+<div class="main">
+    <h1>Manage Categories</h1>
+    
+<h3>Add New Category</h3>
+<input type="text" id="categoryName" placeholder="Enter category name">
+<button onclick="addCategory()">Add Category</button>
+<br><br>
+<table>
+    <tr><th>Category Name</th><th>Action</th></tr>
+    <tbody id="categoryTable">
+        <tr><td>Music</td>
+            <td><button onclick="deleteCategory(this)">Delete</button></td></tr>
+
+        <tr><td>Technology</td>
+            <td><button onclick="deleteCategory(this)">Delete</button></td></tr>
+
+        <tr><td>Sports</td>
+            <td><button onclick="deleteCategory(this)">Delete</button></td></tr>
+
+        <tr><td>Workshop</td>
+            <td><button onclick="deleteCategory(this)">Delete</button></td></tr>
+
+        <tr><td>Social</td>
+            <td><button onclick="deleteCategory(this)">Delete</button></td></tr>
+            
+        <tr><td>Cultural</td>
+            <td><button onclick="deleteCategory(this)">Delete</button></td></tr>
+    </tbody>
+</table>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
